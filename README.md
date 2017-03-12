@@ -17,6 +17,11 @@ because others may not work due to some deprecated and/or not implemented featur
 * Storm (included in the repository)
 * Boost 1.38.0 components: date_time-mt, filesystem-mt, system-mt, thread-mt (included in the repository)
 
+### Getting this
+```
+git clone https://github.com/mike-code/autism.git
+git submodule update --recursive --init
+```
 
 ### Stuff that I got from the repository
 * g++-4.6
