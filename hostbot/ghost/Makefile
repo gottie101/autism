@@ -3,7 +3,7 @@ SYSTEM = $(shell uname)
 C++ = g++
 CC = gcc
 DFLAGS = -DGHOST_MYSQL
-OFLAGS = -O3
+OFLAGS = -O3 -std=c++0x
 LFLAGS = -L. -L../bncsutil/src/bncsutil/ -L../StormLib/stormlib/ -lbncsutil -lpthread -ldl -lz -lStorm -lmysqlclient_r 
 CFLAGS =
 
