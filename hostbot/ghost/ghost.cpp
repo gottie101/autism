@@ -1405,7 +1405,7 @@ void CGHost :: ExtractScripts( )
 				char *SubFileData = new char[FileLength];
 				DWORD BytesRead = 0;
 
-				if( SFileReadFile( SubFile, SubFileData, FileLength, &BytesRead ) )
+				if( SFileReadFile( SubFile, SubFileData, FileLength, &BytesRead, NULL ) )
 				{
 					CONSOLE_Print( "[GHOST] extracting Scripts\\common.j from MPQ file to [" + m_MapCFGPath + "common.j]" );
 					UTIL_FileWrite( m_MapCFGPath + "common.j", (unsigned char *)SubFileData, BytesRead );
@@ -1432,7 +1432,7 @@ void CGHost :: ExtractScripts( )
 				char *SubFileData = new char[FileLength];
 				DWORD BytesRead = 0;
 
-				if( SFileReadFile( SubFile, SubFileData, FileLength, &BytesRead ) )
+				if( SFileReadFile( SubFile, SubFileData, FileLength, &BytesRead, NULL ) )
 				{
 					CONSOLE_Print( "[GHOST] extracting Scripts\\blizzard.j from MPQ file to [" + m_MapCFGPath + "blizzard.j]" );
 					UTIL_FileWrite( m_MapCFGPath + "blizzard.j", (unsigned char *)SubFileData, BytesRead );
