@@ -1,3 +1,14 @@
+ghost.log
+ghost.dbs
+replays/
+savegames/
+maps/
+
+
+######################
+# C++ stuff
+#
+
 # Compiled Object files
 *.slo
 *.lo
