@@ -7,3 +7,6 @@
 [submodule "gnu-gmp"]
 	path = gnu-gmp
 	url = https://github.com/SaberMod/gnu-gmp
+[submodule "boost_1_38_0"]
+	path = boost_1_38_0
+	url = https://github.com/mike-code/boost_1_38_0.git
