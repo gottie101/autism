@@ -25,6 +25,8 @@
  #include <winsock2.h>
  #include <errno.h>
 
+ extern int GetLastError( );
+
 #pragma warning ( disable : 4005 )
  #define EADDRINUSE WSAEADDRINUSE
  #define EADDRNOTAVAIL WSAEADDRNOTAVAIL
@@ -81,7 +83,6 @@
 
  #define closesocket close
 
- extern int GetLastError( );
 #endif
 
 #ifndef INADDR_NONE
