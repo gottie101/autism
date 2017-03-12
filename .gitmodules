@@ -10,3 +10,6 @@
 [submodule "boost_1_38_0"]
 	path = boost_1_38_0
 	url = https://github.com/mike-code/boost_1_38_0.git
+[submodule "CMake"]
+	path = CMake
+	url = https://github.com/Kitware/CMake
