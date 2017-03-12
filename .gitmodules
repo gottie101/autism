@@ -1,0 +1,9 @@
+[submodule "bncsutil"]
+	path = bncsutil
+	url = https://github.com/BNETDocs/bncsutil.git
+[submodule "StormLib"]
+	path = StormLib
+	url = https://github.com/ladislav-zezula/StormLib
+[submodule "gnu-gmp"]
+	path = gnu-gmp
+	url = https://github.com/SaberMod/gnu-gmp
