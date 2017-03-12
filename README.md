@@ -14,6 +14,7 @@ because others may not work due to some deprecated and/or not implemented featur
 * BncsUtils (included in the repository)
 * pthreads (required by Boost library)
 * zLib (required by Ghost++)
+* GMPlib (required by i forgot what)
 * Storm (included in the repository)
 * Boost 1.38.0 components: date_time-mt, filesystem-mt, system-mt, thread-mt (included in the repository)
 
@@ -33,6 +34,14 @@ git submodule update --recursive --init
 ```
 cd 
 ./bootstrap
+make
+sudo make install
+```
+
+### Building GNU-GMP 6.1.2
+```
+cd gnu-gmp/
+./configure
 make
 sudo make install
 ```
