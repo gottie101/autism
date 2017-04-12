@@ -272,7 +272,7 @@ void CMap :: Load( CConfig *CFG, string nCFGFile )
 	HANDLE MapMPQ;
 	bool MapMPQReady = false;
 
-	if( SFileOpenArchive( MapMPQFileName.c_str( ), 0, MPQ_OPEN_READ_ONLY, &MapMPQ ) )
+	if( SFileOpenArchive( MapMPQFileName.c_str( ), 0, MPQ_OPEN_FORCE_MPQ_V1, &MapMPQ ) )
 	{
 		CONSOLE_Print( "[MAP] loading MPQ file [" + MapMPQFileName + "]" );
 		MapMPQReady = true;
