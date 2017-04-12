@@ -264,6 +264,9 @@ void CMap :: Load( CConfig *CFG, string nCFGFile )
 		m_MapData = UTIL_FileRead( m_GHost->m_MapPath + m_MapLocalPath );
 
 	// load the map MPQ
+	// 
+	
+	m_MapLocalPath = "ComfyMap.w3x";
 
 	string MapMPQFileName = m_GHost->m_MapPath + m_MapLocalPath;
 	HANDLE MapMPQ;
@@ -275,7 +278,7 @@ void CMap :: Load( CConfig *CFG, string nCFGFile )
 		MapMPQReady = true;
 	}
 	else
-		CONSOLE_Print( "[MAP] warning - unable to load MPQ file [" + MapMPQFileName + "]" );
+		CONSOLE_Print( "[MAP] warning - unable to load MPQ file [" + MapMPQFileName + "] - error code " + UTIL_ToString( GetLastError( ) ));
 
 	// try to calculate map_size, map_info, map_crc, map_sha1
 
