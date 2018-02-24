@@ -1,11 +1,11 @@
 SHELL = /bin/sh
 SYSTEM = $(shell uname)
-C++ = g++
-CC = gcc
+C++ = g++-4.6
+CC = gcc-4.6
 DFLAGS = -DGHOST_MYSQL
-OFLAGS = -O3 -std=c++0x
-LFLAGS = -L. -L/usr/lib/ -L/usr/local/lib/ -lbncsutil -lpthread -ldl -lz -lStorm -lmysqlclient_r -lboost_date_time-mt -lboost_filesystem-mt -lboost_system-mt -lboost_thread-mt
-CFLAGS =	
+OFLAGS = -O2 -std=c++0x
+LFLAGS = -L. -L/usr/lib/ -L/usr/local/lib/ -lbncsutil -lpthread -ldl -lz -lStorm -lmysqlclient -lboost_date_time-mt -lboost_filesystem-mt -lboost_system-mt -lboost_thread-mt -lgmp
+CFLAGS =
 
 ifeq ($(SYSTEM),Darwin)
 DFLAGS += -D__APPLE__
@@ -23,7 +23,7 @@ DFLAGS += -D__SOLARIS__
 LFLAGS += -lresolv -lsocket -lnsl
 endif
 
-CFLAGS += $(OFLAGS) $(DFLAGS) -I. -I/usr/local/include -I/usr/include  -I../../boost_1_38_0/
+CFLAGS += $(OFLAGS) $(DFLAGS) -I. -I/usr/local/include -I/usr/include  -I../../boost_1_38_0/ -I../../StormLib/src/
 
 ifeq ($(SYSTEM),Darwin)
 CFLAGS += -I../mysql/include/
