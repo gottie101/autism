@@ -60,6 +60,7 @@ sudo cp lib/*.so /usr/local/lib
 ```
 
 ### Building StormLib
+It might be a good idea to replace g++ with g++-4.6 in the Makefile
 ```
 cd StormLib
 mv Makefile.linux Makefile
@@ -68,6 +69,7 @@ sudo make install
 ```
 
 ### Building BncsUtils
+It might be a good idea to replace g++ with g++-4.6 in the Makefile
 ```
 cd bncsutil/src/bncsutil
 make
@@ -75,6 +77,7 @@ sudo make install
 ```
 
 ### Building Ghost++
+It might be a good idea to replace g++ with g++-4.6 in the Makefile
 ```
 cd hostbot/ghost
 make
